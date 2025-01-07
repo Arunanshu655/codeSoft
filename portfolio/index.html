@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src='./assets/logo.png' alt="self-logo" class="logo" />
+        <ul>
+            <li class="navIntems"><a href="#intro">Home</a></li>
+            <li class="navIntems"><a href="#skills">About</a></li>
+            <li class="navIntems"><a href="#works">Project</a></li>
+            <li class="navIntems"><a href="#contactPage">Achievements</a></li>
+        </ul>
+        <button class="desktopMenuBtn">
+            <img src='./assets/contactImg.png' alt="" class="desktopMnuImg" /> contact Me
+        </button>
+    </nav>
+
+    <!-- Intro -->
+    <section id="intro">
+        <div class="introContent">
+            <img src='./assets/self.png' alt="" class="self" />
+            <span class="hello">Hola,</span>
+            <span class="introText"> Myself <span class="introNme">Arunanshu Dey</span><br />Aspiring Web
+                Developer</span>
+            <p class="introPara">Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Cumque mollitia magni
+                nam quis<br> reprehenderit qui illo corrupti maiores voluptate
+                recusandae unde dolores eum cum, fuga
+                delectus<br> minima quia facere modi!</p>
+        </div>
+    </section>
+    <!-- skills -->
+    <sections id="skills">
+        <span class="skillTitle">What I do</span>
+        <span class="skillDescription">Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit. Perspiciatis placeat tempore<br />
+            similique quam culpa eum asperiores ab doloremque.<br />
+            Molestiae deserunt dolorum unde necessitatibus quia eligendi iste ipsa
+            voluptatibus veniam sed.</span>
+        <div class="skillBars">
+            <div class="skillBar">
+                <img src='./assets/backend.png' alt="" class="skillBarImg" />
+                <div class="skillBarText">
+                    <h2>Backend handeling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, inventore.</p>
+                </div>
+
+            </div>
+            <div class="skillBar">
+                <img src='./assets/wedesign.png' alt="" class="skillBarImg" />
+                <div class="skillBarText">
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, inventore.</p>
+                </div>
+
+            </div>
+            <div class="skillBar">
+                <img src='./assets/dbms.png' alt="" class="skillBarImg" />
+                <div class="skillBarText">
+                    <h2>Database Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, inventore.</p>
+                </div>
+
+            </div>
+        </div>
+    </sections>
+    <!-- wroks -->
+    <section id="works">
+        <h2 class="workstitle">My Projects</h2>
+        <span class="worksDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, id?</span>
+        <div class="worksImgs">
+            <div class="workDiv"> <img src='./assets/pf-1.png' alt="" class="worksImg" />
+                <p class="workText">Full stack web app</p>
+            </div>
+            <div class="workDiv"> <img src='./assets/pf-2.png' alt="" class="worksImg" />
+                <p class="workText">Solar System Simulator</p>
+            </div>
+            <div class="workDiv"> <img src='./assets/pf-3.png' alt="" class="worksImg" />
+                <p class="workText">Tic Tac Toe Game</p>
+            </div>
+            <div class="workDiv"> <img src='./assets/pf-4.png' alt="" class="worksImg" />
+                <p class="workText">Auth Project</p>
+            </div>
+        </div>
+        <button class="worksBtn">See more</button>
+    </section>
+    <!-- contacts -->
+    <section id="contactPage">
+        <div id="clients">
+            <h1 class="contactPageTitle">My Achievemnt</h1>
+            <span class="clientDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus, iure? Assumenda nihil sunt neque
+                expedita minima, iure facilis quo maxime!</span>
+            <div class="clientImgs">
+                <img src='./assets/achiv1.png' alt="" class="clientImg" />
+                <img src='./assets/achiv2.png' alt="" class="clientImg" />
+            </div>
+        </div>
+        <div id="contact">
+            <h1 class="contactPageTitle">Contact Me</h1>
+            <span class="contactDesc">Sent me anything on which you want to talk to me</span>
+            <form class='contactForm'>
+                <input type="text" class="name" placeholder='Enter your name' name='your_name' />
+                <input type="email" class="email" placeholder='Enter your email' name='your_email' />
+                <textarea class='msg' name="message" rows='3' placeholder='your message'></textarea>
+                <button class="submitBtn" value='send' type='submit'>Submit</button>
+                <div class="links">
+                    <img src='./assets/fb.png' alt="facebook" class="link" />
+                    <img src='./assets/linkd.png' alt="linkdin" class="link" />
+                    <img src='./assets/leetcode.png' alt="leetcode" class="link" />
+                    <img src='./assets/gfg.png' alt="gfg" class="link" />
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        Copyright &#169; 2023 Arunanshu Dey. All right received.
+    </footer>
+</body>
+
+</html>

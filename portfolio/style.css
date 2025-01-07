@@ -1,0 +1,416 @@
+/* body */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+/* navbar */
+.navbar {
+    height: 1rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: black;
+}
+
+.logo {
+    object-fit: cover;
+    overflow: visible;
+    height: 3rem;
+    width: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a70ae5;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+}
+
+.navItems {
+    margin: 3rem;
+    cursor: pointer;
+
+}
+
+.navItems:hover {
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+    border-left: 0.3rem solid blue;
+    border-right: 0.3rem solid blue;
+}
+
+.desktopMenuBtn {
+    background-color: #2d4d6e;
+    color: rgb(245, 240, 240);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.desktopMnuImg {
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+
+/* //Not working */
+.active {
+    color: blueviolet;
+    border-bottom: 0.3rem;
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.listItems {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width : 720px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+}
+
+/* intro */
+#intro {
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.self {
+    position: absolute;
+    /* top: -1rem; */
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding-right: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introNme {
+    color: blueviolet;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+}
+
+/* skills */
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDescription {
+    font-weight: 150;
+    font-size: 0.9rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(30, 40, 50);
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+@media screen and (max-width : 720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .skillBarText>p {
+        font-size: 3vw;
+    }
+
+    .skillBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    .skillBarText>h2 {
+        font-size: 5vw;
+    }
+}
+
+/* works */
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    padding: 0 1rem;
+
+}
+
+.workstitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.worksImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 45rem;
+}
+
+.workDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.worksImg {
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    margin: 0.5rem;
+    border: 0.5rem solid gray;
+    border-radius: 20%;
+}
+
+.worksBtn {
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width : 585px) {
+    .worksImg {
+        height: 45 vw;
+    }
+}
+
+/* contact */
+#contactPage {
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clientDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.clientImgs {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clientImg {
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+
+#clients {
+    padding: 2rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90w;
+    max-width: 60rem;
+}
+
+.name,
+.email,
+.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+    background: white;
+    border: none;
+    padding: 0.7rem 3.5rem;
+    border-radius: 0.7rem;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem 0.75rem;
+
+}
+
+/* footer */
+.footer {
+    width: 100vw;
+    height: 3rem;
+    background: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+}
