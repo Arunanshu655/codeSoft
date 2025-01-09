@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(204, 27, 145), rgb(221, 28, 215), rgb(197, 0, 247));
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.button {
+    padding: 1.5rem 2rem;
+    margin: 0 0.1rem;
+    border: 0.2rem black solid;
+    border-radius: 47%;
+    background-color: rgba(52, 49, 52, 0.922);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.row {
+    margin: 0.3rem 0;
+
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.row input {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(52, 49, 52, 0.922);
+    width: 19rem;
+    position: relative;
+    right: 0.15rem;
+
+}
